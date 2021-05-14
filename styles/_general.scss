@@ -8,7 +8,7 @@ body{
     display: grid;
     grid-template-areas:"header" "main" "footer" ;
     grid-template-columns: auto;
-    grid-template-rows: 100%;
+    grid-template-rows: 1fr;
     background-color: white;
     
 }
