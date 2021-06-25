@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gifos</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"> -->
     <link rel="stylesheet" href="./style/style.css">
+    <title>GIFOS</title>
 </head>
 
 <body id="body">
 
     <header>
+
         <div class="linea_purpura"></div>
 
         <div class="navbar">
+
             <a href="./index.html">
                 <img src="./assets/logo-mobile.svg" alt="Logo" id="logo">
                 <img src="./assets/logo-desktop.svg" alt="Logo" id="logo-desktop">
@@ -27,7 +28,7 @@
                 <div class="menu">
                     <input type="checkbox" id="checkbox" />
 
-                    <label for="checkbox" id="icon-menu">
+                    <label for="checkbox" id="icon-burger">
                         <span class="span1"></span>
                         <span class="span2"></span>
                         <span class="span3"></span>
@@ -48,54 +49,35 @@
             </nav>
 
         </div>
+
     </header>
+
     <main>
 
-        <section class="main-header">
 
-            <h1>Inspírate, busca, guarda y crea los mejores <span class="gifos">GIFOS</span></h1>
+        <section class="header-favoritos">
 
-            <div class="buscador-contenedor">
-                <img src="./assets/ilustra_header.svg" alt="Ilustración Header">
+            <img src="./assets/icon-favoritos.svg" alt="favoritos">
 
-                <div id="buscador" class="buscador">
+            <h1>Favoritos</h1>
 
-                    <div class="buscador-bloque">
-                        <div class="buscador-y-lupa">
-                            <img src="./assets/icon-search-gris.svg" alt="buscador" class="buscador-lupa-gris"
-                                id="buscador-lupa-gris">
-                            <input type="text" placeholder="Busca GIFOS y más" id="input-buscador"
-                                class="input-buscador">
-                        </div>
-                        <button id="btn-buscador">
-                            <img src="./assets/icon-search.svg" alt="Buscar" id="buscador-lupa"
-                                class="icon-lupa-abierta">
-                            <img src="./assets/close.svg" alt="Cerrar búsqueda" id="cerrar-busqueda"
-                                class="icon-cerrar-busqueda">
-                        </button>
-                    </div>
+        </section>
 
-                    <ul class="buscador-sugerencias" id="buscador-sugerencias">
-                    </ul>
-                </div>
+        <section id="favoritos-vacio">
+
+            <img src="./assets/icon-fav-sin-contenido.svg" alt="favoritos sin contenido">
+            <h3>"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"</h3>
+
+        </section>
+
+        <section id="gifos-favoritos">
+
+            <div class="resultados-favoritos" id="resultados-favoritos">
+
 
             </div>
 
-            <div class="trending-sugerencias">
-                <h3>Trending:</h3>
-                <p id="trending-topics">Reactions, Entertainment, Sports, Stickers, Artists</p>
-            </div>
 
-            <div id="resultados-busqueda-contenedor" class="resultados-busqueda-contenedor">
-
-                <h2 id="titulo-busqueda" class="titulo-busqueda"></h2>
-
-                <div id="resultados-busqueda" class="resultados-busqueda">
-                </div>
-
-                <button id="resultados-vermas" class="btn-generico">ver más</button>
-
-            </div>
 
         </section>
 
@@ -107,10 +89,8 @@
             <div class="trending-slider-contenedor">
 
                 <div class="slider-prev" id="trending-btn-previous">
-                    <!-- <a href="#"> -->
                     <img src="./assets/button-slider-left.svg" alt="izquierda" class="prev-purpura">
                     <img src="./assets/button-slider-left-hover.svg" alt="izquierda" class="prev-blanco">
-                    <!-- </a> -->
                 </div>
 
                 <div class="trending-slider-box">
@@ -119,15 +99,17 @@
                 </div>
 
                 <div class="slider-next" id="trending-btn-next">
-                    <!-- <a href="#"> -->
                     <img src="./assets/Button-Slider-right.svg" alt="derecha" class="next-purpura">
                     <img src="./assets/Button-Slider-right-hover.svg" alt="derecha" class="next-blanco">
-                    <!-- </a> -->
                 </div>
 
             </div>
 
         </section>
+
+    </main>
+
+    </section>
 
     </main>
 
@@ -138,14 +120,17 @@
             <div class="footer-redes">
                 <p>Compartir en:</p>
                 <div class="redes-iconos-contenedor">
+
                     <a href="https://www.facebook.com/" class="redes-icon" target="_blank">
                         <img src="./assets/icon_facebook.svg" alt="Facebook" class="icon">
                         <img src="./assets/icon_facebook_hover.svg" alt="Facebook" class="icon-hover">
                     </a>
+
                     <a href="https://www.twitter.com/" class="redes-icon" target="_blank">
                         <img src="./assets/icon-twitter.svg" alt="Twitter" class="icon">
                         <img src="./assets/icon-twitter-hover.svg" alt="Twitter" class="icon-hover">
                     </a>
+
                     <a href="https://www.instagram.com/" class="redes-icon" target="_blank">
                         <img src="./assets/icon_instagram.svg" alt="Instagram" class="icon">
                         <img src="./assets/icon_instagram-hover.svg" alt="Instagram" class="icon-hover">
@@ -162,9 +147,12 @@
 
     </footer>
     <script src="./script/modo_dark.js"></script>
+
     <!-- <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script> -->
     <script src="./script/treding.js"></script>
-    <script src="./script/home.js"></script>
+    <script src="./script/favoritos.js"></script>
+
+
 </body>
 
 </html>
